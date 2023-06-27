@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %} Omega Todo List - Sign In {% endblock %}
+
+{% block css %} 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}"> 
+{% endblock %}
+
+{% block body %} 
+
+<center> 
+    <p id="heading"> Sign Up </p> 
+    <p class="small_text info">
+        New ID will be created if the id entered by you doesn't already exist. For privacy, I recommend creating a strong ID.
+    </p>
+    <p class="small_text error">
+        {% if already_exists %} 
+        The ID entered by you already exists, enter a different one.
+        {% endif %}
+    </p>
+</center>
+
+<div class="center_div">
+    <form action="/signup" method="post">
+        <label for="main_input">Create your User ID: </label>
+        <input type="password" name="user_id" id="main_input" />
+        <button type="submit" id="submit_btn">Countinue</button>
+    </form>
+</div>
+
+{% endblock %}

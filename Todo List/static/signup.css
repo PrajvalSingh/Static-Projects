@@ -1,0 +1,49 @@
+.center_div {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+#heading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#main_input {
+    margin-top: 15px;
+    padding: 5px;
+    height: 30px;
+    width: 50%;
+    border: 5px double burlywood;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: palevioletred;
+    outline: none;
+}
+
+#submit_btn {
+    height: 50px;
+    width: 100px;
+    background-color: violet;
+    color: #8f238f;
+    border: 3px solid blueviolet;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+}
+
+#submit_btn:hover {
+    transition: 1s;
+    background-color: rgb(245, 57, 245);
+    color: white;
+}

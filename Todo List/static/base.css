@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    height: 65px;
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding-top: 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+nav ul a:hover {
+    color: rgb(234, 233, 236);
+    transition: 1s;
+}
+
+.small_text {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.info { color: blue; }
+.error { color: red; }
